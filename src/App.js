@@ -1,4 +1,6 @@
-import './App.css';
+import React from "react";
+import Sidebar from "./Sidebar";
+import "./App.css";
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
       <h1>Hey there... Let's build</h1>
 
       {/* Sidebar */}
+      <Sidebar />
 
       {/* Feed */}
 
