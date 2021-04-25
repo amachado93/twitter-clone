@@ -1,3 +1,5 @@
+import firebase from "firebase";
+
 const firebaseConfig = {
     apiKey: "AIzaSyDhERM5jQe3XNKnZ0Z7_WrJ_3ep3pNX58A",
     authDomain: "twitter-clone-61ef4.firebaseapp.com",
@@ -7,3 +9,10 @@ const firebaseConfig = {
     appId: "1:354145132216:web:88467443cca83fdb4fde4d",
     measurementId: "G-279M406ENN"
   };
+
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+const db = firebaseApp.firestore();
+
+// go into any file and pull the database in
+export default db;
