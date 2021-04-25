@@ -22,17 +22,18 @@ function Post({displayName,
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                        Username{" "} <span>
-                        <VerifiedUserIcon className="post__badge"/>    
+                        Username{" "} 
+                        <span className="post__headerSpecial">
+                            <VerifiedUserIcon className="post__badge"/>    
+                            @reallycooluser
                         </span>
-                        @reallycooluser
                         </h3>
                     </div>
                     <div className="post__headerDescription">
                         <p>I challenge you to create a Twitter clone with React!</p>
                     </div>
-                    <img src="https://media.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif" alt="gif"/>
                 </div>
+                <img src="https://media.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif" alt="gif"/>
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />
